@@ -4,24 +4,57 @@
 <html>
     <title>Covid 19 data of zanzibar</title>
     <head>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+            <meta charset="utf-8">
         <style>
             #mapCanvas {
                 height: 100%;
-   
-        float: right;
-        width: 910px;
-        overflow: auto;
-}
-            fieldset {
-                height: 98%;
-             float: left;
-             width: 460px;
-             overflow: auto;
-
             }
+            #mapCanvas {
+                margin-right: 400px;
+      }
+      @media print {
+         #mapCanvas {
+          height: 500px;
+          margin: 0;
+      }}
+     
+      
+
+        
+        #floting-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+            }
+
+     #floting-panel select, #floting-panel input {
+        font-size: 15px;
+      }
+
+        #floting-panel select {
+        width: 100%;
+      }
+
+      fieldset{
+         height: 100%;
+        float: right;
+        width: 390px;
+        overflow: auto;
+      }
+      #floting-panel {
+      float: none;
+          width: auto;
+        }
+
+        #floting-panel i {
+        font-size: 12px;
+        }
+      
         </style>
     </head>
     <body>
+            <div id="floting-panel">
            <fieldset style="border-color: pink", style="background-color: pink">
         <h1 style="background: pink" , font-color: white>
             <center>COVID 19 DATA OF ZANZIBAR</center></h1>
@@ -33,13 +66,16 @@
                <p style="font-style: italic"><img src="https://maps.google.com/mapfiles/kml/pal2/icon2.png">cuaranteen accomodation for COVID 19 patients </p>
             </p>
             
-               <br><br> <br><br> <br><br><br><br><br><br> <br>
+               <br><br> <br>
+               
                <br><br><p><b><i><center><italic> Created by Suza youth mapper</italic></center></i></b></p>
                <p><center><img src="pic1.jpg" style="height:7%""></center></p>
                <p><b><i><center><italic> Stay Home Stay Safe</italic></center></i></b></p><br>
+        
                
            
-        </fieldset><br>
+        </fieldset>
+    </div>
        
             <div id="mapCanvas"></div>
     </body>
@@ -185,7 +221,7 @@
                     '<h1 style="background: pink">Jangombe</h1>' +
                     '<p><h3>confirme cases <h2>1</h2>.</p>' +
                     '</div>'],
-                    
+
                     ['<div class="info_content">' +
                     '<h1 style="background: pink">Mazizini hostel</h1>' +
                     '<p><h3>Cuaranteen center <h2>1</h2>.</p>' +
