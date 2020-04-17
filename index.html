@@ -4,19 +4,24 @@
 <html>
     <title>Covid 19 data of zanzibar</title>
     <head>
-        <meta charset="utf-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-            <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
             <meta charset="utf-8">
         <style>
+            body{
+                padding: 0;
+                margin: 0;
+            }
             #mapCanvas {
                 height: 100%;
             }
             #mapCanvas {
-                margin-right: 400px;
+                margin-right: 210px;
       }
       @media print {
          #mapCanvas {
@@ -44,7 +49,7 @@
       fieldset{
          height: 100%;
         float: right;
-        width: 390px;
+        width: 200px;
         overflow: auto;
       }
       #floting-panel {
@@ -55,23 +60,30 @@
         #floting-panel i {
         font-size: 12px;
         }
+        @media only screen and (max-width:620px){
+            .fieldset, .mapCanvas{
+                width:100%;
+            }
+        }
       
         </style>
     </head>
     <body>
             <div id="floting-panel">
-           <fieldset style="border-color: pink", style="background-color: pink">
-        <h1 style="background: pink" , font-color: white>
-            <center>COVID 19 DATA OF ZANZIBAR</center></h1>
+           <fieldset style="border-color: pink; font-size: 10px">
+        <h3 style="background: pink; font-size: 20px">
+            <center>COVID 19 DATA OF ZANZIBAR</center></h3>
          
             <p><strong> keys</strong>
+                <hr style="border-width: 5px",>
              <p style="font-style: italic"><img src="http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png">area highly affected </p>
                <p style="font-style: italic"><img src="http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"> area with not more than 1 cases </p>
                <p style="font-style: italic"><img src="http://maps.google.com/mapfiles/kml/pal2/icon7.png">reserved placeses for COVID 19 patients </p>
                <p style="font-style: italic"><img src="https://maps.google.com/mapfiles/kml/pal2/icon2.png">cuaranteen accomodation for COVID 19 patients </p>
             </p>
+            <hr style="border-width:5px; background-color:pink " >
             
-               <br><br> <br><br><br>
+               <br><br> <br>  <br><br> <br>
                
                <br><br><p><b><i><center><italic> Created by Suza youth mapper</italic></center></i></b></p>
                <p><center><img src="pic1.jpg" style="height:7%""></center></p>
