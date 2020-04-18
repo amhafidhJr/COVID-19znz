@@ -19,6 +19,7 @@
             }
             #mapCanvas {
                 height: 100%;
+                width: 100%;
             }
             #mapCanvas {
                 margin-right: 150px;
@@ -46,7 +47,7 @@
         width: 100%;
       }
 
-      fieldset{
+      lfieldset{
          height: 98%;
         float: right;
         width: 140px;
@@ -69,32 +70,21 @@
         </style>
     </head>
     <body>
-            <div id="floting-panel">
-           <fieldset style="border-color: pink; font-size: 10px">
-        <h3 style="background: pink; font-size: 20px">
-            <center>COVID 19 DATA OF ZANZIBAR</center></h3>
-         
-            <p><strong> keys</strong>
-                <hr style="border-width: 5px",>
+            <div style="background-color: pink;text-align:center; padding:5px; margin-bottom:3px;"> <h3 style="background: pink; font-size: 20px">
+                    <center>COVID 19 DATA OF ZANZIBAR</center></h3></div>
+           
+        <div style="text-align:left; padding:15px; margin-left:7px; font-size: 10px">
+          <h3 style="margin-top: 2px; margin-bottom:2px"><strong> keys</strong></h3>
+                <hr style="border-width: 5px; margin-top: 1px; margin-bottom: 2px",>
              <p style="font-style: italic"><img src="http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png">area highly affected </p>
                <p style="font-style: italic"><img src="http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"> area with not more than 1 cases </p>
                <p style="font-style: italic"><img src="http://maps.google.com/mapfiles/kml/pal2/icon7.png">reserved placeses for COVID 19 patients </p>
                <p style="font-style: italic"><img src="https://maps.google.com/mapfiles/kml/pal2/icon2.png">cuaranteen accomodation for COVID 19 patients </p>
-            </p>
-            <hr style="border-width:5px; background-color:pink " >
-            
-               <br>
-               
-               <br><br><p><b><i><center><italic> Created by Suza youth mapper</italic></center></i></b></p>
-               <p><center><img src="pic1.jpg" style="height:7%""></center></p>
-               <p><b><i><center><italic> Stay Home Stay Safe</italic></center></i></b></p><br>
-        
-               
-           
-        </fieldset>
+              <p style="font-style: oblique; margin-top: 0px ; font-size: 10px">click markers on map to see the detail</p>
     </div>
        
             <div id="mapCanvas"></div>
+            <div style="background-color: #e5e5e5;text-align:center; padding:10px; margin-top:7px;">@ copy right suzaYothmapper.com</div>
     </body>
     </html>
 
@@ -238,22 +228,22 @@
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Kidoti</h1>' +
+                    '<h3 style="background: pink">Kidoti</h3>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Jangombe</h1>' +
+                    '<h3 style="background: pink">Jangombe</h3>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Mazizini hostel</h1>' +
+                    '<h3 style="background: pink">Mazizini hostel</h3>' +
                     '<p><h3>Cuaranteend center <h2>1</h2>.</p>' +
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">ZANZIBAR</h1>' +
+                    '<h3 style="background: pink">ZANZIBAR</h3>' +
                     '<p><h4>Total casesd 35</h4><h4>total recover 4</h4> <h4>active case 30</h4> <h5 style="background: red">total death 1</h5></p>' +
                     '</div>'],
                     ['<div class="info_content">' +
@@ -262,17 +252,17 @@
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Nyarugusu</h1>' +
+                    '<h3 style="background: pink">Nyarugusu</h3>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Mfenesini</h1>' +
+                    '<h3 style="background: pink">Mfenesini</h3>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
 
                     ['<div class="info_content">' +
-                    '<h1 style="background: pink">Mbweni</h1>' +
+                    '<h3 style="background: pink">Mbweni</h3>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
 
@@ -331,7 +321,7 @@
             
                 // Set zoom level
                 var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-                    this.setZoom(10.2);
+                    this.setZoom(10.5);
                     google.maps.event.removeListener(boundsListener);
                 });
                 
