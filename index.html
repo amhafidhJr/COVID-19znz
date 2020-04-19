@@ -130,6 +130,7 @@
                    ['Michezani',-6.164672, 39.198766,"http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"],
                    ['Mkunazini',-6.163641, 39.191203,"http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"],
                    ['Mbuzini',-6.081997, 39.240817,"http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"]
+                     ['Pemba',-5.224586, 39.790978,"http://maps.google.com/intl/en_us/mapfiles/ms/micons/purple-dot.png"]
                   
                 ];
                                     
@@ -285,6 +286,10 @@
                     '<h1 style="background: pink">Mbuzini</h1>' +
                     '<p><h3>confirmed cases <h2>1</h2>.</p>' +
                     '</div>'],
+                      ['<div class="info_content">' +
+                    '<h1 style="background: pink">Pemba</h1>' +
+                    '<p><h3>confirmed cases <h2>2</h2>.</p>' +
+                    '</div>'],
                 ];
                     
                 // Add multiple markers to map
@@ -297,7 +302,7 @@
                       markers[i][12], markers[i][13], markers[i][14], markers[i][15], markers[i][16], markers[i][17], markers[i][18], 
                       markers[i][19],
                       markers[i][20], markers[i][21], markers[i][22], markers[i][23], markers[i][24], markers[i][25],
-                       markers[i][26]);
+                       markers[i][26],   markers[i][27]);
 
                     bounds.extend(position);
                     marker = new google.maps.Marker({
