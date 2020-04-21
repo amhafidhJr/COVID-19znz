@@ -25,16 +25,16 @@
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['active cases', 51],
+          ['active cases', 65],
           ['death', 4],
-          ['total cases',58 ],
+          ['total cases',74 ],
           ['under quarantine', 296],
           ['under investigation', 451]
         ]);
 
         // Set chart options
         var options = {'title':'COVID-19 graphical representation in Zanzibar',
-                       'width':600,
+                       'width':400,
                        'padding':5,
                        'height':300};
 
@@ -47,19 +47,20 @@
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div style="background-color: pink;text-align:center; padding:5px; margin-bottom:3px;"> <h3 style="background: pink; font-size: 20px">
+    <div style="background-color: pink;text-align:center; padding:5px; margin-bottom:3px; width: 100%"> <h3 style="background: pink; font-size: 20px">
             <center>COVID 19 DATA OF ZANZIBAR</center></h3></div>
            
                     <h4 style="font-style: normal"><strong>Click bars to see more inf </strong></h4>
                    
-            
-    <div id="chart_div">
+           
+    <div id="chart_div" style="width: 50%">
+    </div>
             <p style="font-style:italic">based on data available April.19.2020</p>
 
             
     </div>
+    
     <div class="container">
-
     <h4 ><strong>Few tip to protect oneself against COVID 19 </strong></h4>
             <P>
                     STAY home as much as you can</P>
